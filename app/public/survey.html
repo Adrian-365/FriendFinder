@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <title>Survey</title>
 </head>
 
@@ -27,116 +27,165 @@
 
             <hr>
 
-            <h3>Question 1</h2>
-                <h4>I have excellent credit.</h3>
-            <select class="custom-select">
-                            <option selected>Select Your Answer</option>
-                            <option value="1">1 (Strongly Agree)</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 (Stronly Disagree)</option>
-                          </select>
 
-            <h3>Question 2</h2>
-                <h4>Physical fitness is an important part of my life.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 1</h3>
+            <h4>How is your credit?</h4>
+            <select id='q1' class="dropdown">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Umm, let's talk about something else.</option>
+                    <option value="2">It could stand some of improvement.</option>
+                    <option value="3">Meh, decent.</option>
+                    <option value="4">Pretty good, actually.</option>
+                    <option value="5">I'm practically a Lannister! (Credit-wise anyway)</option>
+                </select>
+
+            <h3>Question 2</h3>
+            <h4>Are you into physical fitness?</h4>
+            <select id='q2' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Nope, never touch the stuff.</option>
+                    <option value="2">I've heard of it.</option>
+                    <option value="3">I excercise on and off.</option>
+                    <option value="4">I enjoy excercise, yes.</option>
+                    <option value="5">I'm a lean mean fighting machine!</option>
                   </select>
 
-            <h3>Question 3</h2>
-                <h4>I sometimes enjoy alcohol socially.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 3</h3>
+            <h4>Do you imbibe alcohol?</h4>
+            <select id='q3' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Absolutely not!</option>
+                    <option value="2">Maybe a sip or two on special occasions.</option>
+                    <option value="3">Totally ambivalent.</option>
+                    <option value="4">Count me in, if the occasion permits.</option>
+                    <option value="5">All this talk of Absolute is making me thirsty!</option>
                   </select>
 
-            <h3>Question 4</h2>
-                <h4>I consider myself well-educated.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 4</h3>
+            <h4>Do you consider yourself well-educated?</h4>
+            <select id='q4' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Cash me ousside, how bow dat!</option>
+                    <option value="2">High School was enough for me.</option>
+                    <option value="3">Some college or well-read.</option>
+                    <option value="4">College Degree or very well-read.</option>
+                    <option value="5">PhD or can hold my own with the best of them. </option>
                   </select>
 
-            <h3>Question 5</h2>
-                <h4>I believe that while both of these have merit, to me the arts are move valuable than the sciences.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 5</h3>
+            <h4>Art or Science?</h4>
+            <select id='q5' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Art is my life.</option>
+                    <option value="2">Science is nice but art is what makes life important. </option>
+                    <option value="3">The two are inexplicably intertwined.</option>
+                    <option value="4">I can name two or more Star Trek captains, and often do.</option>
+                    <option value="5">Science is my life.</option>
                   </select>
 
-            <h3>Question 6</h2>
-                <h4>I am insterested in finding a committed long-term relationship.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 6</h3>
+            <h4>Rock and Roll, or Hip-Hop?</h4>
+            <select id='q6' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Rock and Roll will never die!</option>
+                    <option value="2">I prefer rock, but other stuff can be cool.</option>
+                    <option value="3">I like all kinds of music (I can't make  decisions for myself)</option>
+                    <option value="4">I mostly listen to Hip-hop but I'll bust out the Led Zeppelin now and then.</option>
+                    <option value="5">Hip-hop forever!</option>
                   </select>
 
-            <h3>Question 7</h2>
-                <h4>Religion is an important part of my life.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 7</h3>
+            <h4>Athiest or Religious:</h4>
+            <select id='q7' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Religious people are big fat jerks!</option>
+                    <option value="2">I'll believe it if I see it.</option>
+                    <option value="3">That's a tough one.</option>
+                    <option value="4">I believe, but others are welcome to their beliefs too.</option>
+                    <option value="5">Athiests are big fat jerks!</option>
                   </select>
 
-            <h3>Question 8</h2>
-                <h4>I consider myself a Political Liberal.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 8</h3>
+            <h4>Politically Liberal or Politically Conservative?</h4>
+            <select id='q8' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">I have a tattoo of Gloria Steinem on my left arm.</option>
+                    <option value="2">I usually vote Democrat.</option>
+                    <option value="3">They're all crooks, the lot of them.</option>
+                    <option value="4">I usually vote Republican.</option>
+                    <option value="5">I read then re-read Rush Limbaugh's newsletters.   </option>
                   </select>
 
-            <h3>Question 9</h2>
-                <h4>I generally prefer spending time with people one-on-one, rather than in large groups.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 9</h3>
+            <h4>One-on-one time, or Party-time?</h4>
+            <select id='q9' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">Three's a crowd.</option>
+                    <option value="2">We can socialize on holidays.</option>
+                    <option value="3">Parties on the weekend are cool, but that's about it.</option>
+                    <option value="4">My friends are important, but not always.</option>
+                    <option value="5">The more the merrier, I always say!</option>
                   </select>
 
-            <h3>Question 10</h2>
-                <h4>I am an avid out-doors person.</h3>
-            <select class="custom-select">
-                    <option selected>Select Your Answer</option>
-                    <option value="1">1 (Strongly Agree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Stronly Disagree)</option>
+            <h3>Question 10</h3>
+            <h4>Out-doors person, or Indoors person?</h4>
+            <select id='q10' class="custom-select">
+                    <option selected>Select Your Answer:</option>
+                    <option value="1">I'm taking this survey from base-camp before we push to the summit.</option>
+                    <option value="2">I go camping every chance I get.</option>
+                    <option value="3">I'm game but let's not get crazy.</option>
+                    <option value="4">Hiking can be fun once in a while.</option>
+                    <option value="5">Are you nuts? I need my running-water and my wifi!</option>
                   </select>
 
+            <br><br><br>
+            <button id='addBtn' type="button" class="btn btn-lg btn-primary">Submit</button>
+
+            <!-- -------------------------------------------->
+            <script type="text/javascript">
+                // create newFriend from the input data
+                //Listener for the Submit button--------------
+                $("#addBtn").on("click", function(event) {
+                    event.preventDefault();
+                    var newFriend = {
+                        name: $("#userName").val().trim(),
+                        photo: $("#photo").val().trim(),
+                        scores: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                            $("#q6").val(),
+                            $("#q7").val(),
+                            $("#q8").val(),
+                            $("#q9").val(),
+                            $("#q10").val()
+                        ]
+                    };
+                    // 
+                    $.post("/api/new", newFriend)
+                        .done(function(data) {
+                            console.log(data);
+                            alert("Adding you as a friend...");
+                        });
+                });
+
+
+
+
+                // Determine the user's most compatible friend using the following as a guide:
+                // Convert each user's results into a simple array of numbers (ex: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]).
+                // With that done, compare the difference between current user's scores against those from other users, question by question. Add up the differences to calculate the totalDifference.
+                // Example:
+                // User 1: [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+                // User 2: [3, 2, 6, 4, 5, 1, 2, 5, 4, 1]
+                // Total Difference: 2 + 1 + 2 = 5
+                // Remember to use the absolute value of the differences. Put another way: no negative solutions! Your app should calculate both 5-3 and 3-5 as 2, and so on.
+                // The closest match will be the user with the least amount of difference.
+                // Once you've found the current user's most compatible friend, display the result as a modal pop-up.
+                // The modal should display both the name and picture of the closest match.
+            </script>
 
 
             <hr>
@@ -150,27 +199,7 @@
                 </div>
             </footer>
     </div>
-
+    <script type="text/javascript" src="../routing/apiRoutes.js"></script>
 </body>
 
 </html>
-<!-- 
-
-
-""
-
-"" 
-
-""
-
-""
-
-""
-
-""
-
-""
-
-""
-
-"" -->
