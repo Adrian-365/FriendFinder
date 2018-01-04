@@ -1,11 +1,9 @@
-//a GET roune to /survey 
-
-
-//a default route that leads back home
-// Basic route that sends the user first to the AJAX Page
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/home.html"));
-});
+//a GET roune to /survey which should display the survey page.
 app.get("/survey", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
+});
+
+//A default, catch-all route that leads to home.html which displays the home page
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/home.html"));
 });
