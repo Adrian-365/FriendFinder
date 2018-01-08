@@ -1,3 +1,6 @@
+const express = require('express');
+const app = express();
+const router = express.Router();
 //a GET roune to /survey which should display the survey page.
 app.get("/survey", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
